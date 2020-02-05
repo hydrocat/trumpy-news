@@ -16,12 +16,3 @@ def main(*args):
 
     return render_template('index.html', news = news)
 
-# for article in news:
-#     print(article)
-# for feed in raw_feeds:
-#     for article in feed.entries:
-#         news.extend(feed.entries)
-
-# for article in news[:5]:
-#     print(f"{article.title}\n{article.title_detail}\n{article.summary}\n{article.summary_detail}\n")
-
