@@ -13,35 +13,34 @@ Enter it:
 source .venv/bin/activate
 ```
 
-2. Install pip requirements:
+### 2. Install pip requirements:
 ```sh
 pip install -r requirements.txt
 ```
 
 3. Add the environment variables:
-There are 4 variables required to access twitter:
+There are 4 variables required to access twitter and one for flask:
     - CKEY
-      Consumer Key
+        Consumer Key
     - CSECRET
-      Consumer Secret
+        Consumer Secret
     - ATOKEN
-      Authentication Token
+        Authentication Token
     - TSECRET
-      Token Secret
-
+        Token Secret
+    - FLASK\_APP
+        Required by Flask
+        
 _You have to get them from https://developer.twitter.com/_
-And one for flask:
-
-    - FLASK_APP
     
 ```sh
 export -x FLASK_APP=main.py
-export -x CKEY=##
-export -x CSECRET=##
-export -x ATOKEN=##
-export -x TSECRET=##
-
+export -x CKEY=XX
+export -x CSECRET=XX
+export -x ATOKEN=XX
+export -x TSECRET=XX
 ```
+
 
 3. That's it.
 
