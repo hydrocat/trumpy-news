@@ -12,7 +12,8 @@
             <div id="content">
                 {% for article in news: %}
                 <div class="article">
-                    <div class="source">{{ article.source }}</div>
+                    <div class="source {{ article.sentiment }}"
+                         title="{{ article.sentiment.capitalize() + ' feeling'}}"><span>{{ article.source }}</span></div>
                     <div class="content">
                         <div class="title">{{ article.title }}</div>
                         <div class="summary">{{ article.summary}}</div>

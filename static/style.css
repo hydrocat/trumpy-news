@@ -41,13 +41,27 @@ h1 {
 
 .source {
     text-align: center;
-    height: 100%;
-    margin: auto 0;
+    margin: auto .5em;
     padding-right: .5em;
     padding-left: .5em;
     font-weight: bold;
     font-family: sans-serif;
 }
+
+.source.negative {
+    background-image: radial-gradient(salmon, red);
+    border: solid black;
+}
+
+.source.positive {
+    background-image: radial-gradient(lime, lightgreen);
+    border: solid black;
+}
+
+/* .source > span { */
+/*     display: inline-block; */
+/*     vertical-align: middle; */
+/* } */
 
 .link {
     text-align: right;

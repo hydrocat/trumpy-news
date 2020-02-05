@@ -12,4 +12,5 @@ class SimpleArticle(object):
     source : str = ''
     time_published: Any = ""    # Hopefully, a datetime
     original_data : Any = ""
+    sentiment: str = 'neutral'
     
