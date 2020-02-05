@@ -28,8 +28,10 @@ There are 4 variables required to access twitter:
       Authentication Token
     - TSECRET
       Token Secret
+
 _You have to get them from https://developer.twitter.com/_
 And one for flask:
+
     - FLASK_APP
     
 ```sh
@@ -52,16 +54,16 @@ gunicorn wsgi
 4. Runtime Configurations
 Let's say you want to tune it a bit, there are a few things that come to mind:
 
-- cnn.py
+    - cnn.py
   The constructor has the following signature:
   ```python
       def __init__(self, article_class, feeds = [], search_terms = []):
   ```
-  **feeds** is a optional list of RSS urls that are added to the pre-select 3 cnn sources.
+  `feeds` is a optional list of RSS urls that are added to the pre-select 3 cnn sources.
   
-  **search_terms** is another optional argument, takes in strings that, if found in the title or summary, considers the article as related to Trump.
+  `search_terms` is another optional argument, takes in strings that, if found in the title or summary, considers the article as related to Trump.
   
-- twitter.py
+  - twitter.py
 
     ```python
         def __init__(self, article_class, twitter_account = 25073877):
