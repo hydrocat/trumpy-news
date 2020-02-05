@@ -8,9 +8,12 @@ from nltk import tokenize
 from news import SimpleArticle
 
 # Resourcing a dataset
-nltk.download('subjectivity', download_dir = "nltk")
+nltk.download('subjectivity')
+print("Subjectivity ready")
 nltk.download('punkt')
+print("punkt ready")
 nltk.download('vader_lexicon')
+print("VADER ready")
 
 ## Generating dataset
 instances = 100
