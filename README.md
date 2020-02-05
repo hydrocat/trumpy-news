@@ -1,6 +1,11 @@
 # Trumpy News
 A simple flask app that combines Tump's tweets and related CNN articles.
 
+## The differential
+I decided to do some sentiment analysis on the messages. I used the [nltk](http://www.nltk.org/index.html) library developed by Bird, Steven, Edward Loper and Ewan Klein (2009), Natural Language Processing with Python. O’Reilly Media Inc.
+
+On the left of the card, it is shown the source of that information, whether its from Twitter or CNN. If the model finds it to be negative sentences on average, it's backgound turns red. If positive, green. Neutrals are blank.
+
 ## Configuring:
 _This is assuming that you're using bash_
 
